@@ -42,7 +42,6 @@ label input {
 }
 
 label {
-  display: block;
   width: 30px;
   height: 30px;
   border: 1px solid var(--primary);
@@ -52,6 +51,9 @@ label {
   color: var(--primary);
   font-weight: bold;
   font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 label:hover {
@@ -66,7 +68,7 @@ label:hover {
   color: var(--error);
 }
 
-.progress-bar{
+.progress-bar {
   height: 5px;
   background: var(--primary);
   margin-top: 20px;
