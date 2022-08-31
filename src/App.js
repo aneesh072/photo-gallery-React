@@ -3,7 +3,7 @@ import Title from "./components/Title";
 import UploadForm from "./components/UploadForm";
 
 const App = () => {
-  return <div>
+  return <div className="App">
     <Title />
     <UploadForm />
   </div>;
