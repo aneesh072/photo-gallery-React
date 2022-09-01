@@ -15,8 +15,10 @@ const useFirestore = (collection) => {
         });
         setDocs(documents);
       });
-      return () => unsub()
+    return () => unsub();
   }, [collection]);
 
   return { docs };
 };
+
+export default useFirestore;
