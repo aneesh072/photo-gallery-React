@@ -3,7 +3,7 @@ import useFirestore from '../hooks/useFirestore';
 import { motion } from 'framer-motion';
 
 const ImageGrid = ({ setSelectedImg }) => {
-  const { docs } = useFirestore('images');
+  const { docs } = useFirestore('image');
   console.log(docs);
 
   return (
@@ -22,7 +22,7 @@ const ImageGrid = ({ setSelectedImg }) => {
               alt="uploaded pic"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{delay: 2}}
+              transition={{ delay: 2 }}
             />{' '}
           </motion.div>
         ))}
